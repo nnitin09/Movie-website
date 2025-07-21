@@ -11,14 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
             
         },
         {
-            title: 'The Smashing Machine',
-            genre: 'Biography, Drama, Sport',
-            releaseDate: 'TBA 2025',
-            description: 'The story of legendary mixed martial arts champion Mark Kerr, starring Dwayne Johnson and Emily Blunt.',
-            posterUrl: 'images/smashing-poster.jpg',
-            bannerUrl: 'images/smashing-banner.jpg'
-        },
-        {
             title: 'War 2',
             genre: 'Action, Thriller',
             releaseDate: 'August 14, 2025',
@@ -26,6 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
             posterUrl: 'images/war2-poster.jpg',
             bannerUrl: 'images/war2-banner.jpg'
         },
+        {
+            title: 'The Smashing Machine',
+            genre: 'Biography, Drama, Sport',
+            releaseDate: 'TBA 2025',
+            description: 'The story of legendary mixed martial arts champion Mark Kerr, starring Dwayne Johnson and Emily Blunt.',
+            posterUrl: 'images/smashing-poster.jpg',
+            bannerUrl: 'images/smashing-banner.jpg'
+        },
+       
         {
             title: 'Jurassic World Rebirth',
             genre: 'Action, Adventure, Sci-Fi',
@@ -99,6 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
     populateMovieGrid('movie-grid', movies);
 
     // Populate the featured grid on index.html with the first 4 movies
-    populateMovieGrid('featured-movies-grid', movies.slice(0, 3));
+    populateMovieGrid('featured-movies-grid', movies.slice(0, 2));
 
 });
