@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         updateBanner(); // Initial call
-        setInterval(updateBanner, 4000); // Change banner every 7 seconds
+        setInterval(updateBanner, 4000); // Change banner every 4 seconds
     }
 
     // --- Populate Movie Grids ---
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Populate the full grid on movies.html
     populateMovieGrid('movie-grid', movies);
 
-    // Populate the featured grid on index.html with the first 4 movies
+    // Populate the featured grid on index.html with the first 2 movies
     populateMovieGrid('featured-movies-grid', movies.slice(0, 2));
 
 });
