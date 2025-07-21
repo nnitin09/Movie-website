@@ -163,8 +163,8 @@ main {
 /* Mini Movie Grid for Homepage */
  .movie-grid-mini {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
-    gap: 10rem;
+    grid-template-columns: repeat(auto-fit, minmax(1.5rem, 1fr));
+    gap: 5 rem;
     margin-bottom: 2rem;
     text-align: left;
     
