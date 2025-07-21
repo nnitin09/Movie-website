@@ -1,0 +1,40 @@
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.movie-card {
+    background: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(229, 9, 20, 0.3);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-card-content {
+    padding: 1.5rem;
+}
+
+.movie-card-content h3 {
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem;
+}
+
+.movie-card-content p {
+    margin: 0.5rem 0;
+    color: #aaa;
+    font-size: 0.9rem;
+}

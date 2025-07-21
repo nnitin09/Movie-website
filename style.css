@@ -1,0 +1,202 @@
+/* General Body & Typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #141414;
+    color: #fff;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+a {
+    color: #e50914;
+    text-decoration: none;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e50914;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #e50914;
+}
+
+/* Main Content & Sections */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.page-header {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    border-bottom: 1px solid #333;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+}
+
+.content-section, .featured-section {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.content-section h2, .featured-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.featured-section h2 a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.featured-section h2 a:hover {
+    color: #e50914;
+}
+
+.content-section p, .featured-section p {
+    color: #aaa;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* Home Page Banner */
+.banner {
+    color: white;
+    text-align: left;
+    padding: 8rem 4rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner::after {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(232, 227, 227, 0.1) 90%);
+    border-radius: 8px;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-content h1 {
+    font-size: 3.5rem;
+    margin: 0 0 1rem;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem;
+    max-width: 600px;
+}
+
+.btn {
+    background-color: #e50914;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #dcf406;
+}
+
+/* Mini Movie Grid for Homepage */
+ .movie-grid-mini {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+    gap: 10rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    
+} 
+
+
+/* News Summary for Homepage */
+.news-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.news-summary article {
+    background: #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.news-summary h3 {
+    margin-top: 0;
+}
+
+.view-all-link {
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid #333;
+    color: #888;
+}

@@ -1,0 +1,23 @@
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.news-card {
+    background: #1f1f1f;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #e50914;
+}
+
+.news-card h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.news-meta {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+}

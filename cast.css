@@ -1,0 +1,28 @@
+.cast-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.film-cast {
+    background: #1f1f1f;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.film-cast h2 {
+    font-size: 2.2rem;
+    color: #e50914;
+    border-bottom: 2px solid #333;
+    padding-bottom: 1rem;
+    margin: 0 0 2rem 0;
+}
+
+.crew-member {
+    margin-bottom: 1.5rem;
+}
+
+.crew-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
